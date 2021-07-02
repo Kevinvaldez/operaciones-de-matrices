@@ -40,7 +40,7 @@ int main()
 	cout<<"4.- Mostrar la transpuesta de la primera matriz \n";
 	cout<<"5.- Calcular la media y varianza y compararlas \n";
 	cout<<"0.- Salir del menu \n";
-        cout<<" Ingrese una opci�n : "; cin>>op;
+        cout<<" Ingrese una opción : "; cin>>op;
 	switch(op){
 		case 1:
 	cout<<"ESTA FUNCION PERMITE INGRESAR EL VALOR A LAS MATRICES";
@@ -81,4 +81,81 @@ int main()
 
 	return(0);
 
+}
+//aqui mostramos los resultados de las matrises 
+// SOY KEVIN ISMAEL VALDEZ MENDOZA . 
+
+
+#include<iostream>
+
+using namespace std;
+
+
+int main()
+{
+	int i,j,k,l,op,flag;
+	float matriz1[2][2],matriz2[2][2],resultado[2][2];
+	do{
+	system("clear");
+	cout<<"OPERACIONES CON MATRICES EN 2 DIMENSION"<<endl<<endl;
+	cout<<"1.- Ingresar los valores de las matrices \n";
+	cout<<"2.- Obtener el producto de las dos matrices \n";
+	cout<<"3.- Mostrar la potencias 2 de la primera matriz \n"; 
+	cout<<"4.- Mostrar la transpuesta de la primera matriz \n";
+	cout<<"5.- Calcular la media y varianza y compararlas \n";
+	cout<<"0.- Salir del menu \n";
+        cout<<" Ingrese una opción : "; cin>>op;
+	switch(op){
+		case 1:
+	cout<<"ESTA FUNCION PERMITE INGRESAR EL VALOR A LAS MATRICES \n";
+	//Matriz 1
+	cout<<"Ingrese los datos de la matriz1"<<endl;
+	for(i=1;i<=2;i++)
+      {
+        for(j=1;j<=2;j++)
+        {
+            cout<<"\nPosicion["<<i<<"]["<<j<<"]=  ";
+            cin>>matriz1[i][j];
+        }
+      } 
+      cout<<"\nLos datos de la matriz1 son:\n";
+      for(i=1;i<=2;i++)
+      {
+        for(j=1;j<=2;j++)
+        {
+            cout<<"\t"<<matriz1[i][j];
+        }
+        cout<<endl;
+      }
+      //Matriz2
+      cout<<"ingrese datos de la matriz2\n";
+      for(k=1;k<=2;k++)
+      {
+        for(l=1;l<=2;l++)
+        {
+            cout<<"\nPosicion["<<k<<"]["<<l<<"]=  ";
+            cin>>matriz2[k][l];
+        }
+      } 
+       
+      cout<<"\nLos datos de la matriz2 son:\n";
+      for(k=1;k<=2;k++)
+      {
+        for(l=1;l<=2;l++)
+        {
+            cout<<"\t"<<matriz2[k][l];
+        }
+        cout<<endl;
+      }
+      
+	break; 
+		
+}
+	if(op==0){
+	cout<<"Salimos del Sistema: "<<endl;
+
+	}
+	}while(op!=0);
+
+	return(0);
 }

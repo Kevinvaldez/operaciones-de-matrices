@@ -29,7 +29,7 @@ cout<<"\n";
 //FUCION PRINCIPAL
 int main()
 {
-	int op,flag;
+	int op,flag,i,j,k;
 	float matriz1[5][5],matriz2[5][5],resultado[5][5]={{0,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0},{0,0,0,0,0}};
 	do{
 	system("clear");
@@ -43,10 +43,46 @@ int main()
         cout<<" Ingrese una opción : "; cin>>op;
 	switch(op){
 		case 1:
+	// Valdez Mendoza Kevin
 	cout<<"ESTA FUNCION PERMITE INGRESAR EL VALOR A LAS MATRICES";
-		ingresar(matriz1,matriz2);
-		mostrar(matriz1);
-		mostrar(matriz2);
+		cout<<"Ingrese los datos de la matriz1"<<endl;
+	for(i=0;i<5;i++)
+      {
+        	for(j=0;j<5;j++)
+       	 	{
+            	cout<<"\nPosicion["<<i<<"]["<<j<<"]=  ";
+            	cin>>matriz1[i][j];
+        	}
+      } 
+      cout<<"\nLos datos de la matriz1 son:\n";
+      for(i=0;i<5;i++)
+      {
+        	for(j=0;j<5;j++)
+        	{
+            	cout<<"\t"<<matriz1[i][j];
+        	}
+        cout<<endl;
+      }
+      //Matriz2
+	cout<<"ingrese datos de la matriz2\n";
+      	for(i=0;i<5;i++)
+      {
+        	for(j=0;j<5;j++)
+        	{
+            cout<<"\nPosicion["<<i<<"]["<<j<<"]=  ";
+            cin>>matriz2[i][j];
+        	}
+      } 
+       
+      cout<<"\nLos datos de la matriz2 son:\n";
+      for(i=0;i<5;i++)
+      {
+        	for(j=0;j<5;j++)
+        	{
+            	cout<<"\t"<<matriz2[i][j];
+        	}
+        cout<<endl;
+      }
 		break;
 	        case 2:
 	// ESTA FUNCION PERMITE CALCULAR EL PRODUCTO ENTRE DOS MATRICES.

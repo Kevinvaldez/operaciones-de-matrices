@@ -85,11 +85,28 @@ int main()
       }
 		break;
 	        case 2:
-	// ESTA FUNCION PERMITE CALCULAR EL PRODUCTO ENTRE DOS MATRICES.
-		producto(matriz1,matriz2,resultado);
-		mostrar(resultado);
+	/ /dayankerly  ESTA FUNCION PERMITE CALCULAR EL PRODUCTO ENTRE DOS MATRICES
 		break;
 		case 3:
+		cout<<"Calcular la potencia \n";
+		cout<< "El resultado de la matriz1 elevada a 2 es:\n";
+		for(i=0;i<3;i++){
+			for (j=0;j<3;j++){
+				resultado[i][j]=0;
+				for(k=0;k<3;k++){
+					resultado[i][j]=resultado[i][j]+(matriz1[i][k]*matriz1[k][j]);
+				}
+				
+			}
+		}
+
+	for(i=0;i<3;i++){
+		for(j=0;j<3;j++){
+			cout<<resultado[i][j]<<" ";
+			cout<<"\n";
+		}
+	}
+			
 	// ESTA FUNCION PERMITE OBTENER LA POTENCIA 2 DE UNA MATRIZ.
 		potencia(matriz1,2,resultado);
 		mostrar(resultado);

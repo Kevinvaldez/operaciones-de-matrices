@@ -40,7 +40,7 @@ int main()
 	cout<<"4.- Mostrar la transpuesta de la primera matriz \n";
 	cout<<"5.- Calcular la media y varianza y compararlas \n";
 	cout<<"0.- Salir del menu \n";
-        cout<<" Ingrese una opci�n : "; cin>>op;
+        cout<<" Ingrese una opción : "; cin>>op;
 	switch(op){
 		case 1:
 	cout<<"ESTA FUNCION PERMITE INGRESAR EL VALOR A LAS MATRICES";
@@ -59,9 +59,15 @@ int main()
 		mostrar(resultado);
 		break;
 		case 4:
-	// ESTA FUNCION CALCULA LA TRANSPUEST DE LA PRIMERA MATRIZ
-		transpuesta(matriz1,resultado);
-		mostrar(resultado);
+	// Vernaza Cañola Romario Joel
+	cout<<"ESTA FUNCION PERMITE MOSTRAR LA TRANSPUESTA DE LA MATRIZ1. \n";
+		cout<<"La Transpuesta de la matriz1 es:\n";
+			for(i=0;i<5;i++){
+				for(j=0;j<5;j++){
+					cout<<matriz1[j][i]<<" ";
+				}
+			cout<<"\n";	
+			}
 		break;
 		case 5:
 	//CUADO CALCULA Y MUESTRA LAS MADIA Y VARIANZA DE LAS DOS MATRICES

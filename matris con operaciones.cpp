@@ -85,6 +85,35 @@ int main()
       }
 		break;
 	        case 2:
+			
+			
+			
+	//Valencia Jaen Johanna
+			cout<<//"ESTA FUNCION PERMITE CALCULAR EL PRODUCTO ENTRE DOS MATRICES. \n";
+				break;
+		case 3:
+		cout<<"Calcular la potencia \n";
+		cout<< "El producto de las matrices son:\n";
+		for(i=0;i<5;i++){
+			for (j=0;j<5;j++){
+				resultado[i][j]=0;
+				for(k=0;k<3;k++){
+					resultado[i][j]=resultado[i][j]+(matriz1[i][k]*matriz2[k][j]);
+				}
+				
+			}
+		}
+
+	for(i=0;i<5;i++){
+		for(j=0;j<5;j++){
+			cout<<resultado[i][j]<<" ";
+			cout<<"\n";
+		}
+	}
+		
+			
+			
+         
 //dayan kerly george charcopa  permite obtener la potencia 2 de una matriz 
 			void potencia(float (*m1)[5], int p, float (*r)[5])
 {
